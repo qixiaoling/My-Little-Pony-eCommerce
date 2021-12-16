@@ -36,7 +36,8 @@
     font-size: var(--fs-h3);
 }
 .navLinks {
-
+    margin: 0;
+    background-color: var(--clr-pink-lighter);
     position: absolute;
     top: 8vh;
     width: 100%;
@@ -57,12 +58,15 @@
     text-decoration: none;
     color: var(--clr-blue);
     font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
 }
 .active {
-    height: 38vh;/*better not use auto, cos it will not be smooth*/
-
+    height: 35vh;/*better not use auto, cos it will not be smooth*/
+    z-index: 20;
 }
 .iconLinks {
+    background-color: var(--clr-pink-lighter);
+    margin: 0;
     position: absolute;
     top: 8vh;
     left: 0;
@@ -73,5 +77,6 @@
 }
 .iconActive {
     height: 10vh;
+    z-index: 20;
 }
 
