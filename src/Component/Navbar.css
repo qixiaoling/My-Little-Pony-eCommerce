@@ -27,8 +27,13 @@
     align-items: center;
     width: 20%;
     font-size: var(--fs-h4);
+}
+.hamburger-menu,
+.search-icon {
+    border: none;
+    background-color: transparent;
     color: var(--clr-light);
-
+    font-size: var(--fs-h3);
 }
 .navLinks {
 
