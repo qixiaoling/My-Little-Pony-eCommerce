@@ -8,8 +8,8 @@ function Home() {
 
     return(
         <div className='home-container'>
-            <HeroSection/>
-            <CardSection />
+            {/*<HeroSection/>*/}
+            {/*<CardSection />*/}
         </div>
     )
 }

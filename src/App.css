@@ -1,9 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&display=swap');
 
-* {
-    margin: 0;
-    padding:0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif
+}
+:root {
+    --ff-primary: 'Montserrat', sans-serif;
+
+    --fw-reg: 400;
+    --fw-bold:700;
+    --fw-extra-bold: 900;
+
+    --clr-light: #fff;
+    --clr-light-background: #ECEEEE;
+    --clr-dark: #000;
+    --clr-pink: #df2dc3;
+    --clr-blue: #191970;
+    --clr-pink-background-1: rgb(0,0,0);
+    --clr-pink-background-2: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(223,45,195,1) 0%);
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.75rem;
+    --fs-h4: 1.50rem;
+    --fs-body: 1rem;
+
+    --bs: 8px 8px #fdc500;
+    --bs-soft: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --radius: 0.25rem;
+    --radius-larger: 0.5em;
+
+    --transition: all 0.3s linear;
+
+}
+@media (min-width: 880px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 2.75rem;
+        --fs-h4: 1.75rem;
+        --fs-body: 1.125rem;
+    }
+}
+/****************************General Styles*******************************/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--clr-light-background);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+}
+strong {
+    font-weight: var(--fw-bold);
+}
+.btn {
+    font-size: var(--fs-body);
+    padding: 1rem 4rem;
+    background-color: var(--clr-pink);
+    border: none;
+    color: var(--clr-light);
+    transition: var(--transition);
+
+}
+/**************************** Typography *******************************/
+
+h1,
+h2,
+h3 {
+    line-height: 1.6;
+    margin: 0;
+}
+h1 {
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+h4 {
+    font-size: var(--fs-h4);
 }
 

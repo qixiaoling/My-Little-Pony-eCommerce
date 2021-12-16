@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import {useHistory} from 'react-router-dom';
+import './SearchBar.css';
 
 function SearchBar ({searchBarQuery}) {
     const[query, setQuery] = useState('');
