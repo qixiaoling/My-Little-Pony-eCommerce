@@ -29,3 +29,8 @@ input {
     font-size: var(--fs-h4);
     border-radius: var(--radius);
 }
+@media (min-width: 880px) {
+    input {
+        padding: 0.5rem 1.5rem;
+    }
+}

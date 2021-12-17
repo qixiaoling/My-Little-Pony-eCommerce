@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 function HeroSection() {
     return(
         <div className='heroSection-container'>
-           <ReactPlayer  className='video-section' width='100%' height='35vh' controls url='https://www.youtube.com/watch?v=Pa_PRDVpjSk&t=60s'/>
+           <ReactPlayer  className='video-section' width='100%'  height='100%' controls url='https://www.youtube.com/watch?v=Pa_PRDVpjSk&t=60s'/>
         </div>
     )
 }

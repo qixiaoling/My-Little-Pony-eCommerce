@@ -20,6 +20,9 @@
 .logo-link {
     width: 60px;
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-icon {
     display: flex;
@@ -78,5 +81,53 @@
 .iconActive {
     height: 10vh;
     z-index: 20;
+}
+
+@media (min-width: 880px) {
+    .nav-icon {
+        display: none;
+    }
+    .navbar-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navLinks,
+    .iconLinks {
+        position: static;
+        height: auto;
+        background-color: var(--clr-pink);
+    }
+    .navLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navLinks a {
+        text-decoration: none;
+        font-size: var(--fs-body);
+        font-weight: var(--fw-bold);
+        color: var(--clr-light);
+    }
+
+}
+@media (min-width: 1200px) {
+   .iconLinks {
+       width: 30%;
+   }
+    .navLinks {
+        width: 50%;
+        margin-left: 10rem;
+    }
+    .navLinks a {
+        font-size: var(--fs-h4);
+    }
+    .logo-link {
+        width: 75px;
+    }
 }
 
