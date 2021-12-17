@@ -38,7 +38,7 @@ function App() {
               <SearchDetails  searchText = {searchText}/>
           </Route>
       </Switch>
-        {/*<Footer />*/}
+        <Footer />
         <Modal/>
     </Router>
   );

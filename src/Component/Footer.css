@@ -1,7 +1,7 @@
 
 
 .footer-container {
-    background: rgb(238,174,202);
+    background: var(--clr-pink);
     width: 100%;
     display: flex;
     justify-content: space-evenly;
