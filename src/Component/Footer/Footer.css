@@ -12,11 +12,12 @@
     align-items: center;
 }
 .footer-logo-link {
-    width: 60px;
+    width: 75px;
     object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .footer-text {
     width: 100%;
@@ -66,4 +67,14 @@
     color: var(--clr-light);
     font-weight: var(--fw-bold);
     font-size: 0.65rem;
+}
+
+@media (min-width: 880px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-text {
+        width: 90%;
+    }
 }
