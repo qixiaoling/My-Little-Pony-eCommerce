@@ -53,4 +53,17 @@
     text-decoration: none;
     color: var(--clr-light);
     font-weight: var(--fw-bold);
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+.footer-text-Two {
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+.footer-text-Three {
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    font-size: 0.65rem;
 }
