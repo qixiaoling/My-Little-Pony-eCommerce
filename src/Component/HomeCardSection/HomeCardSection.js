@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import PonyCard from "./PonyCard";
-import './CardSection.css'
+import PonyCard from "../PonyCard/PonyCard";
+import './HomeCardSection.css'
 
-function CardSection() {
+function HomeCardSection() {
 
 
     const [ponyData, setPonyData] = useState([]);
@@ -41,4 +41,4 @@ function CardSection() {
     )
 }
 
-export default CardSection
+export default HomeCardSection

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './SearchDetails.css'
-import PonyCard from "../Component/PonyCard";
+import PonyCard from "../Component/PonyCard/PonyCard";
 
 
 function SearchDetails({searchText}) {
