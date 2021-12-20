@@ -10,7 +10,7 @@
 }
 .card-section-title {
     width: 90%;
-    margin: 1rem auto;
+    margin: 2rem auto;
     text-align: center;
 }
 .glitter {
@@ -20,10 +20,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-@media (min-width: 880px) {
-    .card-section-title {
-        margin: 2rem;
-    }
-}
+
 
 

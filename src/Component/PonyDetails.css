@@ -48,17 +48,17 @@
     margin-right: 1rem;
 }
 .video-btn {
-    background: url('https://media.giphy.com/media/OTYiFlofk3EaI/giphy.gif');
+    background-color: var(--clr-blue);
     border-radius: var(--radius-larger);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h4);
     padding: 0.75rem 2.25rem;
     transition: var(--transition);
     border: none;
-    color: var(--clr-blue);
+    color: var(--clr-light);
 }
 .video-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 @media (min-width: 960px) {
