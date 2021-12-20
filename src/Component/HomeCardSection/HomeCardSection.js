@@ -27,13 +27,7 @@ function HomeCardSection() {
     return (
         <div className='card-section-container'>
             <div className='card-section-title'>
-                <div>
-                    <span className='glitter'>Meet the Magical Friends </span>
-                </div>
-                <br/>
-                <div>
-                    <button className='glitter-btn' >See All</button>
-                </div>
+                <span className='glitter'>Meet the Magical Friends </span>
             </div>
 
             <PonyCard ponyData={ponyData}/>

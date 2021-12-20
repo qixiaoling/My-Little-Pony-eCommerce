@@ -36,7 +36,7 @@ export const storeProducts = [
     },
     {
         id: 3,
-        title: "6-Inch Pony Toy that Plays Music for Kids 5 and Up",
+        title: "6-Inch Pony Toy that Plays Music",
         img: ponyThree,
         price: 20.99,
         ages: "3 years+",
@@ -58,7 +58,7 @@ export const storeProducts = [
     },
     {
         id: 5,
-        title: "6-Inch Orange Pony Toy with Rainbow Braid, 17 Accessories",
+        title: "6-Inch Orange Pony with Rainbow Braid",
         img: ponyFive,
         price: 15.99,
         ages: "5 years+",
@@ -114,7 +114,7 @@ export const storeProducts = [
     },
     {
         id: 10,
-        title: "5-Inch Hair-Styling Pony Figure with 17 Accessories",
+        title: "Hair-Styling Pony Figure with 17 Accessories",
         img: ponyTen,
         price: 15.99,
         ages: "4 years+",

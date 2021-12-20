@@ -69,7 +69,7 @@ const ProductContainer = styled.div`
     transition: all 500ms ease-in-out;
     padding: 0.2em 0.4em;
     font-size: 1.4rem;
-    background: rgb(238,174,202);
+    background: var(--clr-pink-lighter);
     color: white;
     border-radius: 0.5rem 0 0 0;
     

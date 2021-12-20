@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link as LinkS} from 'react-scroll';
 import {Link as LinkR} from 'react-router-dom';
-import SearchBar from "../SearchBar";
+import SearchBar from "../../SearchBar/SearchBar";
 import pony from '../../Assets/Images/pony-logo.png';
 import './Navbar.css'
 import {animateScroll as scroll} from 'react-scroll';

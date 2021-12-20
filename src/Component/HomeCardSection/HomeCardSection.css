@@ -9,10 +9,9 @@
     padding: 3em 0;
 }
 .card-section-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
 }
 .glitter {
     font-size: 2rem;
@@ -20,14 +19,11 @@
     background: url('https://media.giphy.com/media/OTYiFlofk3EaI/giphy.gif');
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+}
+@media (min-width: 880px) {
+    .card-section-title {
+        margin: 2rem;
+    }
 }
 
-.glitter-btn {
-    padding: 0.25em 0.5em;
-    border: none;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    border-radius: 6px;
-    cursor: pointer;
-}
 

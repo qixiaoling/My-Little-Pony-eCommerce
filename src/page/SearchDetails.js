@@ -33,17 +33,15 @@ function SearchDetails({searchText}) {
 
 
     return (
-        <>
-            {error && <span>Oops! Did you get the name right?</span>}
-            {loading && <span>Loading</span>}
             <div className='search-details-container'>
-                <div className='search-details-section'>
-                    <h2>You Have Searched:</h2>
-                    <PonyCard ponyData={ponyData}/>
+                <div className='search-details-title'>
+                    {loading && <span>Loading</span>}
+                    {error ? <span>Oops! Did you get the name right?</span>
+                    : <h4>You Have Searched: {searchText}</h4>
+                    }
                 </div>
+                <PonyCard ponyData={ponyData}/>
             </div>
-        </>
-
     );
 }
 

@@ -32,5 +32,7 @@ const ProductListContainer = styled.div`
     justify-content: space-evenly;
     align-items: center;
     padding: 2em 1em;
+    background: var(--clr-pink-lighter);
+  
   
 `
