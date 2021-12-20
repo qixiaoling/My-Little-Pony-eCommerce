@@ -11,8 +11,8 @@ function ProductList() {
     return (
         <>
             <ProductListContainer>
-                {products.map(product=>{
-                    return(
+                {products.map(product => {
+                    return (
                         <Product key={product.id} product={product}/>
                     )
                 })}
@@ -22,17 +22,31 @@ function ProductList() {
 
     )
 }
+
 export default ProductList
 
 const ProductListContainer = styled.div`
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2em 1em;
-    background: var(--clr-pink-lighter);
-  
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 3.5rem;
+  justify-items: center;
+  padding: 3em 1em;
+  background: var(--clr-pink-lighter);
+
+  @media (min-width: 880px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem ;
+
+
+  }
+  @media (min-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1395px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
 `
