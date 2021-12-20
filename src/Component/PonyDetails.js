@@ -54,8 +54,8 @@ function PonyDetails() {
         <div className='pony-details-container'>
             {ponyData.map((pony) => {
                 return (
-                    <section className='pony-details-section' key={pony.id}>
-                        <div className='pony-wrapper pony-wrapper-left'>
+                    <section className='pony-details-content' key={pony.id}>
+                        <div className='img-section'>
                             <button className='pony-image-btn' onClick={() => prevImage(index)}>
                                 <FaChevronLeft/>
                             </button>
@@ -65,12 +65,12 @@ function PonyDetails() {
                             </button>
 
                         </div>
-                        <div className='pony-wrapper pony-wrapper-right'>
-                            <p>name: {pony.name}</p>
-                            <p>gender: {pony.sex}</p>
-                            <p>occupation: {pony.occupation}</p>
+                        <div className='info-section'>
+                            <p>Name: {pony.name}</p>
+                            <p>Gender: {pony.sex}</p>
+                            <p>Occupation: {pony.occupation}</p>
                             <div className='pony-kind-wrapper'>
-                                <p>kind:</p>
+                                <p>Kind:</p>
                                 {pony.kind.map((kind) => {
                                     return (
                                         <p className='pony-kind' key={kind.index}>{kind}</p>

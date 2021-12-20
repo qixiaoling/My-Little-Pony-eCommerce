@@ -30,6 +30,7 @@ const ProductListContainer = styled.div`
   grid-template-columns: 1fr;
   grid-row-gap: 3.5rem;
   justify-items: center;
+  
   padding: 3em 1em;
   background: var(--clr-pink-lighter);
 
