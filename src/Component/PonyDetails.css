@@ -36,69 +36,44 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin-top: 2rem;
 }
+.pony-kind-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pony-kind-wrapper p {
+    margin-right: 1rem;
+}
+.video-btn {
+    background: url('https://media.giphy.com/media/OTYiFlofk3EaI/giphy.gif');
+    border-radius: var(--radius-larger);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+    padding: 0.75rem 2.25rem;
+    transition: var(--transition);
+    border: none;
+    color: var(--clr-blue);
+}
+.video-btn:hover {
+    transform: scale(1.2);
 
-/*.pony-details-container {*/
-/*    width: 100%;*/
-/*    background-color: var(--clr-pink-lighter);*/
-/*    position: relative;*/
+}
+@media (min-width: 960px) {
+    .pony-details-content {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .img-section {
+        width: 40%;
 
-/*}*/
-/*.pony-details-section {*/
-/*    !*position: absolute;*!*/
-/*    !*top: 15vh;*!*/
-/*    !*left: 0;*!*/
-/*    width: 100%;*/
-/*    padding: 2em;*/
-/*    display: flex;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-
-
-/*}*/
-/*.pony-wrapper {*/
-/*    width:45%;*/
-/*    height: 100%;*/
-/*}*/
-/*.pony-wrapper-left {*/
-/*    display: flex;*/
-/*    justify-content: flex-start;*/
-/*    align-items: center;*/
-
-/*}*/
-/*.pony-image-btn {*/
-/*    background: transparent;*/
-/*    border-color: transparent;*/
-/*    font-size: 1.25rem;*/
-/*    margin: 0 0.5rem;*/
-/*    cursor: pointer;*/
-/*}*/
-/*.pony-details-image {*/
-/*    width: 75%;*/
-/*    height: 425px;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*}*/
-/*.pony-wrapper-right {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: flex-start;*/
-
-/*}*/
-/*.pony-wrapper-right p {*/
-/*    margin-bottom: 1em;*/
-/*}*/
-/*.pony-kind-wrapper {*/
-/*    display: flex;*/
-/*}*/
-/*.pony-kind {*/
-/*    margin-left: 1em;*/
-/*}*/
-/*.video-btn {*/
-/*    background: lightgrey;*/
-/*    padding: 0.25em 0.5em;*/
-/*    border: none;*/
-/*    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);*/
-/*    border-radius: 6px;*/
-/*}*/
+    }
+    .info-section {
+        width: 50%;
+    }
+}

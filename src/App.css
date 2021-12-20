@@ -53,7 +53,7 @@ html {
 }
 body {
     background: var(--clr-light-background);
-    color: var(--clr-dark);
+    color: var(--clr-blue);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);

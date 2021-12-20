@@ -66,11 +66,11 @@ function PonyDetails() {
 
                         </div>
                         <div className='info-section'>
-                            <p>Name: {pony.name}</p>
-                            <p>Gender: {pony.sex}</p>
-                            <p>Occupation: {pony.occupation}</p>
+                            <p><strong>Name: </strong>{pony.name}</p>
+                            <p><strong>Gender: </strong>{pony.sex}</p>
+                            <p><strong>Occupation: </strong>{pony.occupation}</p>
                             <div className='pony-kind-wrapper'>
-                                <p>Kind:</p>
+                                <p><strong>Kind: </strong></p>
                                 {pony.kind.map((kind) => {
                                     return (
                                         <p className='pony-kind' key={kind.index}>{kind}</p>
