@@ -15,7 +15,7 @@ function Cart() {
                     <h2>Your Cart</h2>
                     <table>
                         <thead>
-                            <tr>
+                            <tr className='cart-table-heading-row'>
                                 <th>PRODUCTS</th>
                                 <th>NAME OF PRODUCT</th>
                                 <th>PRICE</th>
@@ -27,8 +27,10 @@ function Cart() {
                         <tbody>
                         {cart.map((cartItem)=>{
                             return(
-                                <tr key={cartItem.id}>
-                                    <CartItem cartItem={cartItem}/>
+                                <tr key={cartItem.id}
+                                    className='cart-item-container'
+                                >
+                                    <CartItem cartItem={cartItem} />
                                 </tr>
                             )
                         })}
@@ -55,9 +57,16 @@ const CartContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   
+  
   table {
     width: 100%;
     height: auto;
     text-align: center;
+  }
+  .cart-item-container {
+    width: 100%;
+  }
+  .cart-table-heading-row {
+    display: none;
   }
 `
