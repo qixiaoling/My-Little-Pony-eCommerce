@@ -66,12 +66,17 @@ strong {
     font-weight: var(--fw-bold);
 }
 .btn {
-    font-size: var(--fs-body);
-    padding: 1rem 4rem;
-    background-color: var(--clr-pink);
+    background-color: var(--clr-blue);
+    border-radius: var(--radius-larger);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+    padding: 0.75rem 2.25rem;
+    transition: var(--transition);
     border: none;
     color: var(--clr-light);
-    transition: var(--transition);
+}
+.btn:hover {
+    transform: scale(1.1);
 
 }
 /**************************** Typography *******************************/

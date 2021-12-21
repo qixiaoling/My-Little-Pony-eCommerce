@@ -79,7 +79,7 @@ function PonyDetails() {
                             </div>
                             {pony.id === 1 &&
                             <>
-                                <button className='video-btn' onClick={() => setIsModalOpen(true)}>see video</button>
+                                <button className='btn' onClick={() => setIsModalOpen(true)}>see video</button>
                                 <Modal isOpen={isModalOpen}
                                        onRequestClose={() => setIsModalOpen(false)}
                                        shouldCloseOnOverlayClick={true}
@@ -111,7 +111,7 @@ function PonyDetails() {
                             }
                             {pony.id === 2 &&
                             <>
-                                <button className='video-btn' onClick={() => setIsModalOpen(true)}>see video</button>
+                                <button className='btn' onClick={() => setIsModalOpen(true)}>see video</button>
                                 <Modal isOpen={isModalOpen}
                                        onRequestClose={() => setIsModalOpen(false)}
                                        shouldCloseOnOverlayClick={true}
@@ -143,7 +143,7 @@ function PonyDetails() {
                             }
                             {pony.id === 3 &&
                             <>
-                                <button className='video-btn' onClick={() => setIsModalOpen(true)}>see video</button>
+                                <button className='btn' onClick={() => setIsModalOpen(true)}>see video</button>
                                 <Modal isOpen={isModalOpen}
                                        onRequestClose={() => setIsModalOpen(false)}
                                        shouldCloseOnOverlayClick={true}
@@ -175,7 +175,7 @@ function PonyDetails() {
                             }
                             {pony.id === 4 &&
                             <>
-                                <button className='video-btn' onClick={() => setIsModalOpen(true)}>see video</button>
+                                <button className='btn' onClick={() => setIsModalOpen(true)}>see video</button>
                                 <Modal isOpen={isModalOpen}
                                        onRequestClose={() => setIsModalOpen(false)}
                                        shouldCloseOnOverlayClick={true}
@@ -207,7 +207,7 @@ function PonyDetails() {
                             }
                             {pony.id === 5 &&
                             <>
-                                <button className='video-btn' onClick={() => setIsModalOpen(true)}>see video</button>
+                                <button className='btn' onClick={() => setIsModalOpen(true)}>see video</button>
                                 <Modal isOpen={isModalOpen}
                                        onRequestClose={() => setIsModalOpen(false)}
                                        shouldCloseOnOverlayClick={true}
@@ -239,7 +239,7 @@ function PonyDetails() {
                             }
                             {pony.id === 6 &&
                             <>
-                                <button className='video-btn' onClick={() => setIsModalOpen(true)}>see video</button>
+                                <button className='btn' onClick={() => setIsModalOpen(true)}>see video</button>
                                 <Modal isOpen={isModalOpen}
                                        onRequestClose={() => setIsModalOpen(false)}
                                        shouldCloseOnOverlayClick={true}
