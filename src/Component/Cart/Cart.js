@@ -43,7 +43,7 @@ export default Cart;
 const CartContainer = styled.div`
   width: 100%;
   margin: 0 auto;
-  height: auto;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -53,7 +53,11 @@ const CartContainer = styled.div`
     width: 100%;
     height: auto;
     text-align: center;
+    border-collapse: separate;/* $$1 since it's a table, cannot simply give margin. instead do this*/
+    border-spacing: 0 1em;/* $$2 since it's a table, cannot simply give margin. instead do this*/
   }
+  
+
 
   @media (min-width: 880px) {
     width: 75%;
