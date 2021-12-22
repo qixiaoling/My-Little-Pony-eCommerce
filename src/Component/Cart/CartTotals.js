@@ -15,16 +15,6 @@ function CartTotals() {
             </div>
             <div className='cart-total-btns'>
                 <LinkR to='/products'>
-                    <button className='btn btn-checkout'>
-                        Continue Shopping
-                    </button>
-                </LinkR>
-                <LinkR to='/'>
-                    <button className='btn btn-checkout'>
-                        Check Out
-                    </button>
-                </LinkR>
-                <LinkR to='/products'>
                     <button
                         onClick={() => {
                             clearCart()
@@ -34,6 +24,17 @@ function CartTotals() {
                         clear cart
                     </button>
                 </LinkR>
+                <LinkR to='/products'>
+                    <button className='btn btn-checkout'>
+                        Continue Shopping
+                    </button>
+                </LinkR>
+                <LinkR to='/'>
+                    <button className='btn btn-checkout btn-pay'>
+                        Check Out
+                    </button>
+                </LinkR>
+
 
             </div>
 
@@ -71,12 +72,24 @@ const CartTotalContainer = styled.div`
     border-radius: var(--radius);
     padding: 0.45rem 1.75rem;
     margin-bottom: 1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   .btn-checkout:hover {
     transform: none;
     background: var(--clr-blue-lighter);
     color: var(--clr-blue);
+  }
+  .btn-pay {
+    background: transparent;
+    border: var(--clr-pink);
+    color: var(--clr-pink);
+    border: 1px solid var(--clr-pink);
+  }
+  .btn-pay:hover {
+    transform: none;
+    background: var(--clr-pink);
+    color: var(--clr-light);
   }
   p {
     font-weight: var(--fw-bold);
