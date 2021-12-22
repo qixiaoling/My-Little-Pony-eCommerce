@@ -36,9 +36,6 @@
 .count-update {
     grid-area: count-update;
 }
-.cart-total {
-    display: none;
-}
 
 .cart-item-img {
     background-position: center;
@@ -56,12 +53,18 @@
 }
 @media (min-width: 880px) {
     .cart-item-content {
-        display: block;
+        display: table;/*^^1 to reverse from grid back to normal table*/
         column-span: none;
     }
+    td {
+        vertical-align: middle;
+    }
+
     .cart-img {
         width: 5rem;
-        height: auto;
+        height: 5rem;
         object-fit: cover;
+        border-radius: 0.5rem;
     }
+
 }

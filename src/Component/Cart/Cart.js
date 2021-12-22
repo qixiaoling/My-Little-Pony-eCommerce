@@ -14,28 +14,19 @@ function Cart() {
                 <CartContainer>
                     <h2>Your Cart</h2>
                     <table>
-                        <thead>
-                            <tr className='cart-table-head'>
-                                <th>PRODUCTS</th>
-                                <th>NAME OF PRODUCT</th>
-                                <th>PRICE</th>
-                                <th>QUANTITY</th>
-                                <th>REMOVE</th>
-                                <th>TOTAL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        {cart.map((cartItem)=>{
-                            return(
+                        {cart.map((cartItem) => {
+                            return (
                                 <tr key={cartItem.id}
                                     className='cart-item-container'
                                 >
-                                    <CartItem cartItem={cartItem} />
+                                    <CartItem cartItem={cartItem}/>
                                 </tr>
                             )
                         })}
-                        </tbody>
+
                     </table>
+
+
                     <CartTotals/>
                 </CartContainer>
                 :
@@ -57,32 +48,14 @@ const CartContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
-  
+
   table {
     width: 100%;
     height: auto;
     text-align: center;
   }
-  .cart-item-container {
-    width: 100%;
-  }
 
-  .cart-table-head {
-    display: none;
-  }
   @media (min-width: 880px) {
     width: 75%;
-
-    thead {
-      width: 100%;
-    }
-    .cart-table-head {
-      display: block;
-      width: 90%;
-      margin: 0 auto;
-      font-weight: var(--fw-reg);
-    }
-    
   }
 `

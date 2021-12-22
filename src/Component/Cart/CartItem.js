@@ -34,9 +34,6 @@ function CartItem(props) {
                 </button>
 
             </td>
-            <td className='cart-total'>
-                {total}
-            </td>
         </div>
 
 

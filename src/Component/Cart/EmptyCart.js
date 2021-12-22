@@ -2,7 +2,7 @@ import React from 'react';
 
 function EmptyCart() {
     return(
-        <h1> Your Cart is Empty </h1>
+        <h4> Your Cart is Empty </h4>
     )
 }
 export default EmptyCart;
