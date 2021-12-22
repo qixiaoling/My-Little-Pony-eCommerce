@@ -54,3 +54,14 @@
     font-weight: var(--fw-bold);
     color: var(--clr-blue);
 }
+@media (min-width: 880px) {
+    .cart-item-content {
+        display: block;
+        column-span: none;
+    }
+    .cart-img {
+        width: 5rem;
+        height: auto;
+        object-fit: cover;
+    }
+}

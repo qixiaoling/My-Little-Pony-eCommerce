@@ -15,7 +15,7 @@ function Cart() {
                     <h2>Your Cart</h2>
                     <table>
                         <thead>
-                            <tr className='cart-table-heading-row'>
+                            <tr className='cart-table-head'>
                                 <th>PRODUCTS</th>
                                 <th>NAME OF PRODUCT</th>
                                 <th>PRICE</th>
@@ -50,7 +50,8 @@ function Cart() {
 export default Cart;
 
 const CartContainer = styled.div`
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -66,7 +67,19 @@ const CartContainer = styled.div`
   .cart-item-container {
     width: 100%;
   }
-  .cart-table-heading-row {
+  .cart-table-head {
     display: none;
+  }
+  @media (min-width: 880px) {
+    thead {
+      width: 100%;
+    }
+    .cart-table-head {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      font-weight: var(--fw-reg);
+    }
+    
   }
 `

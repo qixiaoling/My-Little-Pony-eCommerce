@@ -8,31 +8,39 @@ function CartTotals() {
     return (
 
         <CartTotalContainer>
-            <div>
+            <div className='cart-total-text'>
+                <p><span>Subtotal:</span><span>{cartSubTotal}</span> </p>
+                <p><span>Tax:</span> <span>{cartTax}</span></p>
+                <p><span>Total:</span> <span>{cartTotal}</span></p>
+            </div>
+            <div className='cart-total-btns'>
                 <LinkR to='/products'>
-                    <button onClick={() => {
-                        clearCart()
-                    }}>
-                        clear cart
-                    </button>
-                </LinkR>
-                <p>Subtotal: {cartSubTotal}</p>
-                <p>Tax: {cartTax}</p>
-                <p>Total: {cartTotal}</p>
-                <LinkR to='/products'>
-                    <button className='btn btn-modal '>
+                    <button className='btn btn-checkout'>
                         Continue Shopping
                     </button>
                 </LinkR>
                 <LinkR to='/'>
-                    <button className='btn btn-modal'>
+                    <button className='btn btn-checkout'>
                         Check Out
                     </button>
                 </LinkR>
+                <LinkR to='/products'>
+                    <button
+                        onClick={() => {
+                            clearCart()
+                        }}
+                        className='btn btn-checkout'
+                    >
+                        clear cart
+                    </button>
+                </LinkR>
+
             </div>
+
         </CartTotalContainer>
     )
 }
+
 export default CartTotals;
 
 const CartTotalContainer = styled.div`
@@ -42,5 +50,51 @@ const CartTotalContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
+  
+  .cart-total-text,
+  .cart-total-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  
+  a {
+    width: 100%;
+  }
+  
+  .btn-checkout {
+    width: 100%;
+    font-size: var(--fs-body);
+    border-radius: var(--radius);
+    padding: 0.45rem 1.75rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+  .btn-checkout:hover {
+    transform: none;
+    background: var(--clr-blue-lighter);
+    color: var(--clr-blue);
+  }
+  p {
+    font-weight: var(--fw-bold);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+  }
+  @media (min-width: 880px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    
+    .cart-total-text,
+    .cart-total-btns {
+      width: 25%;
+      
+    }
+  }
 `
