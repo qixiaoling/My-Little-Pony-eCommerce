@@ -8,31 +8,34 @@ function ProductDetail(){
     return(
         <ProductDetailContainer>
             <div className='product-detail-content'>
-                <div className='detail-left'>
+                <div className='detail-img'>
                     <img src={detailProduct.img} alt={detailProduct.title}/>
                 </div>
-                <div className='detail-right'>
-                    <h2>{detailProduct.title}</h2>
+                <div className='detail-info'>
+                    <h3>{detailProduct.title}</h3>
                     <p className='detail-price'>${detailProduct.price}</p>
                     <p>{detailProduct.info}</p>
-                    <LinkR to='/products'>
-                        <button className='btn btn-detail'>
-                            Back to products
+                    <div className='detail-btn-wrapper'>
+                        <LinkR to='/products'>
+                            <button className='btn btn-detail'>
+                                Back to products
+                            </button>
+                        </LinkR>
+                        <button
+                            disabled={detailProduct.inCart? true : false}
+
+                            onClick={()=>{
+                                addToCart(detailProduct.id);
+                                openModal(detailProduct.id);
+                            }}
+
+                            className='btn btn-detail btn-cart'
+
+                        >
+                            {detailProduct.inCart ? 'In Cart' : 'Add to Cart '}
                         </button>
-                    </LinkR>
-                    <button
-                        disabled={detailProduct.inCart? true : false}
+                    </div>
 
-                        onClick={()=>{
-                            addToCart(detailProduct.id);
-                            openModal(detailProduct.id);
-                        }}
-
-                        className='btn btn-detail btn-cart'
-
-                    >
-                        {detailProduct.inCart ? 'In Cart' : 'Add to Cart '}
-                    </button>
                 </div>
             </div>
 
@@ -65,6 +68,7 @@ const ProductDetailContainer = styled.div`
     font-weight: var(--fw-reg);
     font-size: 0.85rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid var(--clr-blue);
     letter-spacing: 1px;
   }
@@ -83,6 +87,33 @@ const ProductDetailContainer = styled.div`
     transform: none;
     background: var(--clr-pink);
     color: var(--clr-light);
+  }
+  
+  @media (min-width: 880px) {
+    .product-detail-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+    }
+    .detail-img {
+      width: 45%;
+      display: grid;
+      place-items: center;
+      
+    }
+    .detail-img img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .detail-info {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
   }
   
 

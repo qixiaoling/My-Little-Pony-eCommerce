@@ -72,7 +72,7 @@ const CartTotalContainer = styled.div`
     border-radius: var(--radius);
     padding: 0.45rem 1.75rem;
     margin-bottom: 1rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
   }
   .btn-checkout:hover {
@@ -106,7 +106,7 @@ const CartTotalContainer = styled.div`
     
     .cart-total-text,
     .cart-total-btns {
-      width: 25%;
+      width: 35%;
       
     }
   }
