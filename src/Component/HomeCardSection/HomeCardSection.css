@@ -1,4 +1,4 @@
-.search-details-container {
+.card-section-container {
     width: 100vw;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(246,10,137,1) 100%);
@@ -8,28 +8,18 @@
     align-items: center;
     padding: 3em 0;
 }
-.search-details-title {
+.card-section-title {
     width: 90%;
-    text-align: start;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    text-align: center;
 }
-.search-details-title h4 {
+.glitter {
+    font-size: 2rem;
     font-weight: bold;
     background: url('https://media.giphy.com/media/OTYiFlofk3EaI/giphy.gif');
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

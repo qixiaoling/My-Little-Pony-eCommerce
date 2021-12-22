@@ -14,26 +14,19 @@ function Cart() {
                 <CartContainer>
                     <h2>Your Cart</h2>
                     <table>
-                        <thead>
-                            <tr>
-                                <th>PRODUCTS</th>
-                                <th>NAME OF PRODUCT</th>
-                                <th>PRICE</th>
-                                <th>QUANTITY</th>
-                                <th>REMOVE</th>
-                                <th>TOTAL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        {cart.map((cartItem)=>{
-                            return(
-                                <tr key={cartItem.id}>
+                        {cart.map((cartItem) => {
+                            return (
+                                <tr key={cartItem.id}
+                                    className='cart-item-container'
+                                >
                                     <CartItem cartItem={cartItem}/>
                                 </tr>
                             )
                         })}
-                        </tbody>
+
                     </table>
+
+
                     <CartTotals/>
                 </CartContainer>
                 :
@@ -49,15 +42,24 @@ export default Cart;
 
 const CartContainer = styled.div`
   width: 100%;
-  height: auto;
+  margin: 0 auto;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
+
   table {
     width: 100%;
     height: auto;
     text-align: center;
+    border-collapse: separate;/* $$1 since it's a table, cannot simply give margin. instead do this*/
+    border-spacing: 0 1em;/* $$2 since it's a table, cannot simply give margin. instead do this*/
+  }
+  
+
+
+  @media (min-width: 880px) {
+    width: 75%;
   }
 `

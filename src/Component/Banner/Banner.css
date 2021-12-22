@@ -1,0 +1,20 @@
+.banner-container {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: var(--clr-light);
+}
+.banner-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.banner-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+@media (min-width: 880px) {
+    .banner-content {
+        width: 70%;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
-import HeroSection from "../Component/HeroSection";
-import CardSection from "../Component/CardSection";
+import HeroSection from "../Component/HeroSection/HeroSection";
+import HomeCardSection from "../Component/HomeCardSection/HomeCardSection";
+import Banner from "../Component/Banner/Banner";
 
 
 
@@ -8,8 +9,9 @@ function Home() {
 
     return(
         <div className='home-container'>
-            {/*<HeroSection/>*/}
-            {/*<CardSection />*/}
+            <HeroSection/>
+            <HomeCardSection />
+            <Banner/>
         </div>
     )
 }

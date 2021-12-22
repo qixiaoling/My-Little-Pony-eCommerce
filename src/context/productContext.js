@@ -65,12 +65,12 @@ export function ProductProvider({children}) {
         for(let i=0;i<cart.length;i++){
             temp += cart[i].total;
         }
-        setCartSubTotal(temp);
+        setCartSubTotal(temp.toFixed(2));
         const tempTax = temp * 0.1;
         const tax = parseFloat(tempTax.toFixed(2));
         const total = temp + tax;
         setCartTax(tax);
-        setCartTotal(total);
+        setCartTotal(total.toFixed(2));
     }
 
     function handleDetails(id) {

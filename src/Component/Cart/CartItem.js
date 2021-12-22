@@ -6,14 +6,14 @@ function CartItem(props) {
     const {id, title, img, price, count, total} = props.cartItem;
     const {increment, decrement, removeItem} = useContext(ProductContext);
     return (
-        <>
-            <td>
+        <div className='cart-item-content' >
+            <td className='cart-img'  >
                 <img className='cart-item-img' src={img} alt={title}/>
             </td>
-            <td>
+            <td className='cart-title'>
                 {title}
             </td>
-            <td>
+            <td className='cart-price'>
                 {price}
             </td>
             <td className='count-update'>
@@ -27,16 +27,14 @@ function CartItem(props) {
                     <i className="far fa-plus-square"></i>
                 </span>
             </td>
-            <td>
-                <button onClick={() => removeItem(id)}>
+            <td className='cart-removeBtn'>
+                <button onClick={() => removeItem(id)} className='remove-btn'>
                     <i className="fas fa-trash-alt"></i>
+                    REMOVE
                 </button>
 
             </td>
-            <td>
-                {total}
-            </td>
-        </>
+        </div>
 
 
     )

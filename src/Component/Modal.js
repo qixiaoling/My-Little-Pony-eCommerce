@@ -11,18 +11,19 @@ function Modal() {
             {modalOpen ?
                 <ModalContainer>
                     <div className='modal-container'>
-                        <h3>Item added to Cart</h3>
+                        <h4>Item added to Cart</h4>
                         <img src={modalProduct.img} alt={modalProduct.title} className='modal-img'/>
-                        <p>{modalProduct.title}</p>
-                        <p>${modalProduct.price}</p>
-                        <LinkR to='/products'>
-                            <button onClick={()=>closeModal()}>
-                                Continue Shopping
+                        <p className='modal-title'><strong>{modalProduct.title}</strong></p>
+                        <p className='modal-price'>${modalProduct.price}</p>
+
+                        <LinkR to='/cart'>
+                            <button onClick={()=>closeModal()} className='btn btn-modal'>
+                               Go to Cart
                             </button>
                         </LinkR>
-                        <LinkR to='/cart'>
-                            <button onClick={()=>closeModal()}>
-                               Go to Cart
+                        <LinkR to='/products'>
+                            <button onClick={()=>closeModal()} className='btn btn-modal '>
+                                Continue Shopping
                             </button>
                         </LinkR>
                     </div>
@@ -48,17 +49,56 @@ const ModalContainer = styled.div`
   place-items: center;
   
   .modal-container {
-    width: 30%;
+    background: var(--clr-light-background);
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 2rem 3rem;
+  }
+  .modal-container > *:not(:last-child) {
+    margin: 0; /* %%1-first remove all the margin*/
+    display: block;
+    margin-bottom: 0.75rem;/*  %%2-then add 0.75rem to every child but not the last child*/
   }
   .modal-img {
-    width: 100%;
+    width: 80%;
     background-size: cover;
     background-position: center;
+  }
+  
+  @media (min-width: 880px) {
+    .modal-container {
+      width: 50%;
+    }
+  }
+  @media (min-width: 960px) {
+    .modal-container {
+      width: 45%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .modal-container {
+      width: 30%;
+    }
+  }
+
+  
+  .btn-modal {
+    border: 1px solid var(--clr-blue);
+    color: var(--clr-blue);
+    background: transparent;
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-body);
+    border-radius: var(--radius);
+    padding: 0.25rem 0.85rem;
+  }
+  .btn-modal:hover {
+    background: var(--clr-blue);
+    color: var(--clr-light);
+    transform: none;
   }
   
 `

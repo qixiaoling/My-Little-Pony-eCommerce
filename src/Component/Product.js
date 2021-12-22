@@ -37,11 +37,22 @@ export default Product
 
 const ProductContainer = styled.div`
 
-  width: 18%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  border-radius: var(--radius-larger);
+  
+  @media (min-width: 880px) {
+    width: 70%;
+  }
+  @media (min-width: 960px) {
+    width: 90%;
+  }
+  @media (min-width: 1395px) {
+    width: 90%;
+  }
  
   .product-container-top {
     position: relative;
@@ -69,18 +80,19 @@ const ProductContainer = styled.div`
     transition: all 500ms ease-in-out;
     padding: 0.2em 0.4em;
     font-size: 1.4rem;
-    background: rgb(238,174,202);
-    color: white;
+    background: var(--clr-pink-lighter);
+    color: var(--clr-light);
     border-radius: 0.5rem 0 0 0;
     
     
   }
   .cart-btn:hover {
     color: rgba(148,187,233,1);
-    background: white;
+    background: var(--clr-light);
   }
   .product-container-top:hover .cart-btn { 
     /*When mouse hovering the bigger container, what happens to the button inside of the container*/
+    /*"transition" should be written on .cart-btn and .product-img!!!*/
     transform: translate(0, 0);
   }
   .product-container-top:hover .product-img {

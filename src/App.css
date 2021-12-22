@@ -15,7 +15,10 @@
     --clr-light-background: #ECEEEE;
     --clr-dark: #000;
     --clr-pink: #df2dc3;
+    --clr-pink-lighter: #EF96E1;
+    --clr-pink-darker: #f60a89;
     --clr-blue: #191970;
+    --clr-blue-lighter: #A3A3C5;
     --clr-pink-background-1: rgb(0,0,0);
     --clr-pink-background-2: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(223,45,195,1) 0%);
 
@@ -30,7 +33,7 @@
     --bs-soft: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     --radius: 0.25rem;
-    --radius-larger: 0.5em;
+    --radius-larger: 0.85rem;
 
     --transition: all 0.3s linear;
 
@@ -47,10 +50,11 @@
 /****************************General Styles*******************************/
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
     background: var(--clr-light-background);
-    color: var(--clr-dark);
+    color: var(--clr-blue);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -63,12 +67,17 @@ strong {
     font-weight: var(--fw-bold);
 }
 .btn {
-    font-size: var(--fs-body);
-    padding: 1rem 4rem;
-    background-color: var(--clr-pink);
+    background-color: var(--clr-blue);
+    border-radius: var(--radius-larger);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+    padding: 0.75rem 2.25rem;
+    transition: var(--transition);
     border: none;
     color: var(--clr-light);
-    transition: var(--transition);
+}
+.btn:hover {
+    transform: scale(1.1);
 
 }
 /**************************** Typography *******************************/

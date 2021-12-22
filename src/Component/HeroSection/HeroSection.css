@@ -1,11 +1,20 @@
 .heroSection-container {
     width: 100%;
-    height: 90vh;
+    height: 35vh;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     position: relative;
 }
-
+@media (min-width: 880px) {
+    .heroSection-container {
+        height: 55vh;
+    }
+}
+@media (min-width: 1200px) {
+    .heroSection-container {
+        height: 92vh;
+    }
+}
 /*below code is not neccessary any more after changing the navbar into sticky and change the
 above container to 90vh*/
 /*.video-section {*/
