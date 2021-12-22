@@ -50,7 +50,7 @@ function Cart() {
 export default Cart;
 
 const CartContainer = styled.div`
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   height: auto;
   display: flex;
@@ -71,6 +71,8 @@ const CartContainer = styled.div`
     display: none;
   }
   @media (min-width: 880px) {
+    width: 75%;
+    
     thead {
       width: 100%;
     }
