@@ -67,12 +67,13 @@ const CartContainer = styled.div`
   .cart-item-container {
     width: 100%;
   }
+
   .cart-table-head {
     display: none;
   }
   @media (min-width: 880px) {
     width: 75%;
-    
+
     thead {
       width: 100%;
     }
