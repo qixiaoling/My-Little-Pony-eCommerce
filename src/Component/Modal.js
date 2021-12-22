@@ -15,14 +15,15 @@ function Modal() {
                         <img src={modalProduct.img} alt={modalProduct.title} className='modal-img'/>
                         <p className='modal-title'><strong>{modalProduct.title}</strong></p>
                         <p className='modal-price'>${modalProduct.price}</p>
-                        <LinkR to='/products'>
-                            <button onClick={()=>closeModal()} className='btn btn-modal '>
-                                Continue Shopping
-                            </button>
-                        </LinkR>
+
                         <LinkR to='/cart'>
                             <button onClick={()=>closeModal()} className='btn btn-modal'>
                                Go to Cart
+                            </button>
+                        </LinkR>
+                        <LinkR to='/products'>
+                            <button onClick={()=>closeModal()} className='btn btn-modal '>
+                                Continue Shopping
                             </button>
                         </LinkR>
                     </div>
@@ -49,7 +50,7 @@ const ModalContainer = styled.div`
   
   .modal-container {
     background: var(--clr-light-background);
-    width: 60%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
