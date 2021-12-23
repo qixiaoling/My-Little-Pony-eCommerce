@@ -1,5 +1,5 @@
 .cart-item-content {
-    column-span: all;
+    /*column-span: all;*/
     width: 90%;
     margin: auto;
     border: 1px solid var(--clr-blue);
@@ -54,7 +54,6 @@
 @media (min-width: 880px) {
     .cart-item-content {
         display: table;/*^^1 to reverse from grid back to normal table*/
-        column-span: none;
     }
     td {
         vertical-align: middle;
