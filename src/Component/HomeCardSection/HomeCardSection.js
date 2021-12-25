@@ -11,7 +11,7 @@ function HomeCardSection() {
 
     async function getDataRarity() {
         try {
-            const result = await axios.get('http://ponyweb.ml/v1/character/all?limit=6');
+            const result = await axios.get('https://ponyweb.ml/v1/character/all?limit=6');
             setPonyData(result.data.data);
             console.log(result.data.data)
         } catch (e) {
