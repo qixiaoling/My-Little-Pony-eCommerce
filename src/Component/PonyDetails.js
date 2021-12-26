@@ -86,14 +86,13 @@ function PonyDetails() {
                                        style={
                                            {
                                                overlay: {
-                                                   backgroundColor: 'grey',
+                                                   backgroundColor: 'rgb(0,0,0,0.5)',
                                                    position: 'absolute',
                                                    top: '15vh',
                                                    left: 0
                                                },
                                                content: {
-                                                   color: '#000',
-                                                   backgroundColor: 'lightPink',
+                                                   backgroundColor: 'var(--clr-pink-lighter)',
                                                    display: 'flex',
                                                    flexDirection: 'column',
                                                    justifyContent:'space-evenly',
@@ -105,7 +104,7 @@ function PonyDetails() {
                                 >
                                     <ReactPlayer className='pony-video-section' width='70%' height='55vh' controls
                                                  url='https://www.youtube.com/watch?v=UXbSqJXTvJ0'/>
-                                    <button className='video-btn' onClick={() => setIsModalOpen(false)}>close</button>
+                                    <button className='btn-smaller' onClick={() => setIsModalOpen(false)}>close</button>
                                 </Modal>
                             </>
                             }
@@ -118,14 +117,13 @@ function PonyDetails() {
                                        style={
                                            {
                                                overlay: {
-                                                   backgroundColor: 'grey',
+                                                   backgroundColor: 'rgb(0,0,0,0.5)',
                                                    position: 'absolute',
                                                    top: '15vh',
                                                    left: 0
                                                },
                                                content: {
-                                                   color: '#000',
-                                                   backgroundColor: 'lightPink',
+                                                   backgroundColor: 'var(--clr-pink-lighter)',
                                                    display: 'flex',
                                                    flexDirection: 'column',
                                                    justifyContent:'space-evenly',
@@ -137,7 +135,7 @@ function PonyDetails() {
                                 >
                                     <ReactPlayer className='pony-video-section' width='70%' height='55vh' controls
                                                  url='https://www.youtube.com/watch?v=AHROhpTXssY'/>
-                                    <button className='video-btn' onClick={() => setIsModalOpen(false)}>close</button>
+                                    <button className='btn-smaller' onClick={() => setIsModalOpen(false)}>close</button>
                                 </Modal>
                             </>
                             }
@@ -150,14 +148,13 @@ function PonyDetails() {
                                        style={
                                            {
                                                overlay: {
-                                                   backgroundColor: 'grey',
+                                                   backgroundColor: 'rgb(0,0,0,0.5)',
                                                    position: 'absolute',
                                                    top: '15vh',
                                                    left: 0
                                                },
                                                content: {
-                                                   color: '#000',
-                                                   backgroundColor: 'lightPink',
+                                                   backgroundColor: 'var(--clr-pink-lighter)',
                                                    display: 'flex',
                                                    flexDirection: 'column',
                                                    justifyContent:'space-evenly',
@@ -169,7 +166,7 @@ function PonyDetails() {
                                 >
                                     <ReactPlayer className='pony-video-section' width='70%' height='55vh' controls
                                                  url='https://www.youtube.com/watch?v=NT0rSNxdw94'/>
-                                    <button className='video-btn' onClick={() => setIsModalOpen(false)}>close</button>
+                                    <button className='btn-smaller' onClick={() => setIsModalOpen(false)}>close</button>
                                 </Modal>
                             </>
                             }
@@ -182,14 +179,13 @@ function PonyDetails() {
                                        style={
                                            {
                                                overlay: {
-                                                   backgroundColor: 'grey',
+                                                   backgroundColor: 'rgb(0,0,0,0.5)',
                                                    position: 'absolute',
                                                    top: '15vh',
                                                    left: 0
                                                },
                                                content: {
-                                                   color: '#000',
-                                                   backgroundColor: 'lightPink',
+                                                   backgroundColor: 'var(--clr-pink-lighter)',
                                                    display: 'flex',
                                                    flexDirection: 'column',
                                                    justifyContent:'space-evenly',
@@ -201,7 +197,7 @@ function PonyDetails() {
                                 >
                                     <ReactPlayer className='pony-video-section' width='70%' height='55vh' controls
                                                  url='https://www.youtube.com/watch?v=tJiaBI3Ggkw'/>
-                                    <button className='video-btn' onClick={() => setIsModalOpen(false)}>close</button>
+                                    <button className='btn-smaller' onClick={() => setIsModalOpen(false)}>close</button>
                                 </Modal>
                             </>
                             }
@@ -214,14 +210,13 @@ function PonyDetails() {
                                        style={
                                            {
                                                overlay: {
-                                                   backgroundColor: 'grey',
+                                                   backgroundColor: 'rgb(0,0,0,0.5)',
                                                    position: 'absolute',
                                                    top: '15vh',
                                                    left: 0
                                                },
                                                content: {
-                                                   color: '#000',
-                                                   backgroundColor: 'lightPink',
+                                                   backgroundColor: 'var(--clr-pink-lighter)',
                                                    display: 'flex',
                                                    flexDirection: 'column',
                                                    justifyContent:'space-evenly',
@@ -233,7 +228,7 @@ function PonyDetails() {
                                 >
                                     <ReactPlayer className='pony-video-section' width='70%' height='55vh' controls
                                                  url='https://www.youtube.com/watch?v=pWhZ9dJAhWM'/>
-                                    <button className='video-btn' onClick={() => setIsModalOpen(false)}>close</button>
+                                    <button className='btn-smaller' onClick={() => setIsModalOpen(false)}>close</button>
                                 </Modal>
                             </>
                             }
@@ -265,7 +260,7 @@ function PonyDetails() {
                                 >
                                     <ReactPlayer className='pony-video-section' width='70%' height='55vh' controls
                                                  url='https://www.youtube.com/watch?v=XdHTSO4iY_g'/>
-                                    <button className='video-btn' onClick={() => setIsModalOpen(false)}>close</button>
+                                    <button className='btn-smaller' onClick={() => setIsModalOpen(false)}>close</button>
                                 </Modal>
                             </>
                             }
