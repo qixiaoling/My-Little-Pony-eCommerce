@@ -14,7 +14,7 @@ export default EmptyCart;
 const EmptyCartContainer = styled.div`
   width: 100%;
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
