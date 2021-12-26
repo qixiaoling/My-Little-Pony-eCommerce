@@ -80,6 +80,20 @@ strong {
     transform: scale(1.1);
 
 }
+.btn-smaller {
+    background-color: var(--clr-blue);
+    border-radius: var(--radius-larger);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+    padding: 0.35rem 1rem;
+    transition: var(--transition);
+    border: none;
+    color: var(--clr-light);
+}
+.btn-smaller:hover {
+    transform: scale(1.1);
+
+}
 /**************************** Typography *******************************/
 
 h1,
