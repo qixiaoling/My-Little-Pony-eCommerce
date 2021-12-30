@@ -5,11 +5,12 @@ import SearchBar from "../../SearchBar/SearchBar";
 import pony from '../../Assets/Images/pony-logo.png';
 import './Navbar.css'
 import {animateScroll as scroll} from 'react-scroll';
-import {FaHamburger} from "react-icons/all";
+import {useHistory} from "react-router-dom";
 
 function Navbar({navQuery}) {
     const [links, toggleLinks] = useState(false);
     const [icon, toggleIcon] = useState(false);
+    const history = useHistory();
     function toggleHome() {
         scroll.scrollToTop();
     }
@@ -30,6 +31,7 @@ function Navbar({navQuery}) {
         }
         return className;
     }
+    console.log(history.location.pathname)
 
     return (
         <nav className='navbar-container'>
@@ -55,11 +57,21 @@ function Navbar({navQuery}) {
                 </div>
                 <ul className={changeLinksClasses()}>
                     <li className='link'>
-                        <LinkS to='pony-card'
-                               smooth={true} duration={500} onClick={closeMobileMenu}
-                        >
-                            Meeting the friends
-                        </LinkS>
+                        {
+                            history.location.pathname === '/' ?
+                                (
+                                    <LinkS to='pony-card'
+                                           smooth={true} duration={500} onClick={closeMobileMenu}
+                                    >
+                                        Meet the friends
+                                    </LinkS>
+                                )
+                                :
+                                (
+                                    (<LinkR to='/' onClick={closeMobileMenu} >Meet the friends</LinkR>)
+                                )
+                        }
+
                     </li>
                     <li>
                         <LinkR to='/products' onClick={closeMobileMenu}>

@@ -6,7 +6,8 @@
     border-radius: var(--radius);
     background-color: var(--clr-pink-lighter);
     display: grid;
-    grid-template-columns: 1fr minmax(3.5rem,50vw) 1fr;
+    /*grid-template-columns: 1fr minmax(3.5rem,50vw) 1fr;*/
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 0.5fr;
     grid-template-areas:
         "img title ."

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {ProductContext} from "../context/productContext";
 import {Link as LinkR} from "react-router-dom";
 
-function Modal() {
+function CartModal() {
     const {modalProduct, modalOpen, closeModal} = useContext(ProductContext);
 
     return (
@@ -16,14 +16,14 @@ function Modal() {
                         <p className='modal-title'><strong>{modalProduct.title}</strong></p>
                         <p className='modal-price'>${modalProduct.price}</p>
 
-                        <LinkR to='/cart'>
-                            <button onClick={()=>closeModal()} className='btn btn-modal'>
-                               Go to Cart
-                            </button>
-                        </LinkR>
                         <LinkR to='/products'>
                             <button onClick={()=>closeModal()} className='btn btn-modal '>
                                 Continue Shopping
+                            </button>
+                        </LinkR>
+                        <LinkR to='/cart'>
+                            <button onClick={()=>closeModal()} className='btn btn-modal'>
+                                Go to Cart
                             </button>
                         </LinkR>
                     </div>
@@ -36,7 +36,7 @@ function Modal() {
 
     )
 }
-export default Modal;
+export default CartModal;
 
 const ModalContainer = styled.div`
   position: fixed;

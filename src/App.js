@@ -8,7 +8,7 @@ import SearchDetails from "./page/SearchDetails";
 import Footer from "./Component/Footer/Footer";
 import ProductList from "./page/ProductList";
 import ProductDetail from "./page/ProductDetail";
-import Modal from "./Component/Modal";
+import CartModal from "./Component/CartModal";
 import Cart from "./Component/Cart/Cart";
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
           </Route>
       </Switch>
         <Footer />
-        <Modal/>
+        <CartModal/>
     </Router>
   );
 }
